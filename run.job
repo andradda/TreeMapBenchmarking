@@ -1,0 +1,27 @@
+#!/bin/bash
+#SBATCH --job-name=treemap_jmh
+#SBATCH --output=treemap_jmh_%j.out
+#SBATCH --error=treemap_jmh_%j.err
+#SBATCH --partition=cores
+#SBATCH --nodes=1
+#SBATCH --nodelist=cn15
+#SBATCH --cpus-per-task=40
+
+export TMPDIR=$HOME/tmp
+source "$HOME/.sdkman/bin/sdkman-init.sh"
+export JAVA_HOME="$HOME/.sdkman/candidates/java/21.0.2-tem"
+export PATH="$JAVA_HOME/bin:$PATH"
+
+cd ~/TreeMapComp
+
+hostname
+pwd
+
+uname -m
+which java
+file "$(which java)"
+
+which java
+java -version
+
+./run-benchmarks.sh

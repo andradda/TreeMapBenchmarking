@@ -1,0 +1,9 @@
+.gradle
+build/
+.idea/
+gradle/wrapper/
+!**/src/main/**/build/
+!**/src/test/**/build/
+.kotlin
+
+.vscode/

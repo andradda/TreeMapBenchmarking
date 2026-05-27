@@ -1,0 +1,24 @@
+#!/bin/bash
+#SBATCH --job-name=treemap_jmh_arm
+#SBATCH --output=treemap_jmh_arm_%j.out
+#SBATCH --error=treemap_jmh_arm_%j.err
+#SBATCH --partition=dgx1
+#SBATCH --nodes=1
+#SBATCH --nodelist=dgx1
+#SBATCH --cpus-per-task=20
+
+export TMPDIR=$HOME/tmp
+
+# Remove SDKMAN Java
+unset JAVA_HOME
+unset SDKMAN_DIR
+export PATH=$(echo "$PATH" | tr ':' '\n' | grep -v '.sdkman' | paste -sd:)
+
+cd ~/TreeMapComp
+
+hostname # show node name
+pwd # show current directory
+uname -m # show architecture
+which java # show which java is being used
+
+./run-benchmarks.sh
