@@ -16,8 +16,8 @@ while ($t -le $maxThreads) {
     $t *= 2
 }
 
-$trees = @("snaptree", "skiplist")
-$workloads = @("readHeavy", "balanced", "snapshotHeavy", "writeHeavy")
+$trees = @("snaptree" "chromatic6" "vcas" "kary")
+$workloads = @("readonly", "readHeavy", "balanced", "writeHeavy")
 $dists = @("UNIFORM", "SKEWED")
 
 foreach ($tree in $trees) {

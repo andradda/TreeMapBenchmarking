@@ -9,7 +9,7 @@ mkdir -p "$TMP_DIR"
 
 # Detect available logical CPUs
 CORES=${SLURM_CPUS_PER_TASK:-$(nproc)}   # $(getconf _NPROCESSORS_ONLN)
-MAX_THREADS=$CORES #$((CORES * 2))
+MAX_THREADS=$((CORES * 2))
 
 # Load hwloc if available
 module load hwloc
@@ -25,8 +25,8 @@ while [ "$t" -le "$MAX_THREADS" ]; do
   t=$((t * 2))
 done
 
-TREES=("chromatic6") # "snaptree" "vcas" "chromatic6"
-WORKLOADS=("readHeavy" "balanced" "writeHeavy") # add "readHeavy" "balanced" "snapshotHeavy" "writeHeavy"
+TREES=("snaptree" "chromatic6" "vcas" "kary")
+WORKLOADS=("readonly", "readHeavy", "balanced", "writeHeavy")
 DISTS=("UNIFORM" "SKEWED")
 
 for tree in "${TREES[@]}"; do

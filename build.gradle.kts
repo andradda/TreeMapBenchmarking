@@ -58,6 +58,37 @@ jmh {
         threads.set(threadsProp.toInt())
     }
 
+    val modeProp = findProperty("jmhMode") as String?
+    benchmarkMode.set(
+        modeProp
+            ?.split(",")
+            ?.map { it.trim() }
+            ?.filter { it.isNotEmpty() }
+            ?: listOf("thrpt")
+    )
+
+    warmupIterations.set(
+        (findProperty("jmhWarmupIterations") as String?)?.toInt() ?: 5
+    )
+
+    iterations.set(
+        (findProperty("jmhIterations") as String?)?.toInt() ?: 7
+    )
+
+    warmup.set(
+        (findProperty("jmhWarmupTime") as String?) ?: "2s"
+    )
+
+    timeOnIteration.set(
+        (findProperty("jmhIterationTime") as String?) ?: "20s"
+    )
+
+    fork.set(
+        (findProperty("jmhForks") as String?)?.toInt() ?: 2
+    )
+
+    failOnError.set(true)
+
     val paramsProp = findProperty("jmhBenchmarkParameters") as String?
     if (paramsProp != null) {
         paramsProp.split(",")
@@ -80,5 +111,6 @@ jmh {
                 )
             }
     }
+
     jvmArgsAppend.add("-XX:-RestrictContended")
 }

@@ -1,0 +1,418 @@
+{
+    "version": "1.4.0",
+    "project": {
+        "name": "TreeMapComp-jmh",
+        "directory": "C:\\Users\\andra\\OneDrive\\Desktop\\MASTER ITU\\SEMESTER 4\\Thesis\\TreeMapBenchmarking",
+        "workspaceDir": "C:\\Users\\andra\\OneDrive\\Desktop\\MASTER ITU\\SEMESTER 4\\Thesis\\TreeMapBenchmarking",
+        "sources": [
+            "C:\\Users\\andra\\OneDrive\\Desktop\\MASTER ITU\\SEMESTER 4\\Thesis\\TreeMapBenchmarking\\src\\jmh\\java"
+        ],
+        "dependencies": [
+            "TreeMapComp",
+            "TreeMapComp-test"
+        ],
+        "classpath": [
+            "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\org.openjdk.jmh\\jmh-generator-bytecode\\1.36\\b8ab8b88a6b48a0cb540ede365fa84876e6608bf\\jmh-generator-bytecode-1.36.jar",
+            "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\org.openjdk.jmh\\jmh-generator-asm\\1.36\\ea8dba84346f9ecd34fc85f83fc1a14f7475348e\\jmh-generator-asm-1.36.jar",
+            "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\org.openjdk.jmh\\jmh-generator-reflection\\1.36\\40c9b3bb0523b58dada012987172452895f2c6cb\\jmh-generator-reflection-1.36.jar",
+            "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\org.openjdk.jmh\\jmh-core\\1.37\\896f27e49105b35ea1964319c83d12082e7a79ef\\jmh-core-1.37.jar",
+            "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\edu.stanford.ppl\\snaptree\\0.1\\88caaa75fba09a4944f696c398c09da956f7c2c2\\snaptree-0.1.jar",
+            "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\net.sf.jopt-simple\\jopt-simple\\5.0.4\\4fdac2fbe92dfad86aa6e9301736f6b4342a3f5c\\jopt-simple-5.0.4.jar",
+            "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.commons\\commons-math3\\3.6.1\\e4ba98f1d4b3c80ec46392f25e094a6a2e58fcbf\\commons-math3-3.6.1.jar",
+            "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\org.ow2.asm\\asm\\9.0\\af582ff60bc567c42d931500c3fdc20e0141ddf9\\asm-9.0.jar",
+            "C:\\Users\\andra\\OneDrive\\Desktop\\MASTER ITU\\SEMESTER 4\\Thesis\\TreeMapBenchmarking\\.bloop\\TreeMapComp\\build\\classes",
+            "C:\\Users\\andra\\OneDrive\\Desktop\\MASTER ITU\\SEMESTER 4\\Thesis\\TreeMapBenchmarking\\src\\main\\resources",
+            "C:\\Users\\andra\\OneDrive\\Desktop\\MASTER ITU\\SEMESTER 4\\Thesis\\TreeMapBenchmarking\\.bloop\\TreeMapComp-test\\build\\classes",
+            "C:\\Users\\andra\\OneDrive\\Desktop\\MASTER ITU\\SEMESTER 4\\Thesis\\TreeMapBenchmarking\\src\\test\\resources",
+            "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\org.junit.jupiter\\junit-jupiter\\5.10.0\\8fea1d9c58b2156f1b998f2f18da04bc9e087f74\\junit-jupiter-5.10.0.jar",
+            "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\org.junit.jupiter\\junit-jupiter-params\\5.10.0\\9041c7365495a897a64782ea5a6fdb99dab1814e\\junit-jupiter-params-5.10.0.jar",
+            "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\org.junit.jupiter\\junit-jupiter-api\\5.10.0\\2fe4ba3d31d5067878e468c96aa039005a9134d3\\junit-jupiter-api-5.10.0.jar",
+            "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\org.junit.platform\\junit-platform-commons\\1.10.0\\d533ff2c286eaf963566f92baf5f8a06628d2609\\junit-platform-commons-1.10.0.jar",
+            "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\org.opentest4j\\opentest4j\\1.3.0\\152ea56b3a72f655d4fd677fc0ef2596c3dd5e6e\\opentest4j-1.3.0.jar",
+            "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\org.apiguardian\\apiguardian-api\\1.1.2\\a231e0d844d2721b0fa1b238006d15c6ded6842a\\apiguardian-api-1.1.2.jar"
+        ],
+        "out": "C:\\Users\\andra\\OneDrive\\Desktop\\MASTER ITU\\SEMESTER 4\\Thesis\\TreeMapBenchmarking\\.bloop\\TreeMapComp-jmh\\build",
+        "classesDir": "C:\\Users\\andra\\OneDrive\\Desktop\\MASTER ITU\\SEMESTER 4\\Thesis\\TreeMapBenchmarking\\.bloop\\TreeMapComp-jmh\\build\\classes",
+        "resources": [
+            "C:\\Users\\andra\\OneDrive\\Desktop\\MASTER ITU\\SEMESTER 4\\Thesis\\TreeMapBenchmarking\\src\\jmh\\resources"
+        ],
+        "java": {
+            "options": [
+                "-target",
+                "21",
+                "-source",
+                "21",
+                "-h",
+                "C:\\Users\\andra\\OneDrive\\Desktop\\MASTER ITU\\SEMESTER 4\\Thesis\\TreeMapBenchmarking\\build\\generated\\sources\\headers\\java\\jmh",
+                "-g",
+                "-sourcepath",
+                "",
+                "-proc:none",
+                "-XDuseUnsharedTable=true",
+                "--add-exports",
+                "java.base/jdk.internal.vm.annotation=ALL-UNNAMED"
+            ]
+        },
+        "platform": {
+            "name": "jvm",
+            "config": {
+                "home": "C:\\Program Files\\Eclipse Adoptium\\jdk-21.0.8.9-hotspot",
+                "options": [
+                    
+                ]
+            },
+            "mainClass": [
+                
+            ],
+            "classpath": [
+                "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\org.openjdk.jmh\\jmh-generator-bytecode\\1.36\\b8ab8b88a6b48a0cb540ede365fa84876e6608bf\\jmh-generator-bytecode-1.36.jar",
+                "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\org.openjdk.jmh\\jmh-generator-asm\\1.36\\ea8dba84346f9ecd34fc85f83fc1a14f7475348e\\jmh-generator-asm-1.36.jar",
+                "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\org.openjdk.jmh\\jmh-generator-reflection\\1.36\\40c9b3bb0523b58dada012987172452895f2c6cb\\jmh-generator-reflection-1.36.jar",
+                "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\org.openjdk.jmh\\jmh-core\\1.37\\896f27e49105b35ea1964319c83d12082e7a79ef\\jmh-core-1.37.jar",
+                "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\edu.stanford.ppl\\snaptree\\0.1\\88caaa75fba09a4944f696c398c09da956f7c2c2\\snaptree-0.1.jar",
+                "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\org.junit.jupiter\\junit-jupiter\\5.10.0\\8fea1d9c58b2156f1b998f2f18da04bc9e087f74\\junit-jupiter-5.10.0.jar",
+                "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\org.junit.platform\\junit-platform-launcher\\1.10.0\\89a1922534ed102be1fb2a8c0b2c6151297a12bf\\junit-platform-launcher-1.10.0.jar",
+                "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\org.junit.jupiter\\junit-jupiter-params\\5.10.0\\9041c7365495a897a64782ea5a6fdb99dab1814e\\junit-jupiter-params-5.10.0.jar",
+                "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\org.junit.jupiter\\junit-jupiter-engine\\5.10.0\\90587932d718fc51a48112d33045a18476c542ad\\junit-jupiter-engine-5.10.0.jar",
+                "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\org.junit.jupiter\\junit-jupiter-api\\5.10.0\\2fe4ba3d31d5067878e468c96aa039005a9134d3\\junit-jupiter-api-5.10.0.jar",
+                "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\org.junit.platform\\junit-platform-engine\\1.10.0\\276c4edcf64fabb5a139fa7b4f99330d7a93b804\\junit-platform-engine-1.10.0.jar",
+                "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\org.junit.platform\\junit-platform-commons\\1.10.0\\d533ff2c286eaf963566f92baf5f8a06628d2609\\junit-platform-commons-1.10.0.jar",
+                "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\net.sf.jopt-simple\\jopt-simple\\5.0.4\\4fdac2fbe92dfad86aa6e9301736f6b4342a3f5c\\jopt-simple-5.0.4.jar",
+                "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.commons\\commons-math3\\3.6.1\\e4ba98f1d4b3c80ec46392f25e094a6a2e58fcbf\\commons-math3-3.6.1.jar",
+                "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\org.ow2.asm\\asm\\9.0\\af582ff60bc567c42d931500c3fdc20e0141ddf9\\asm-9.0.jar",
+                "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\org.opentest4j\\opentest4j\\1.3.0\\152ea56b3a72f655d4fd677fc0ef2596c3dd5e6e\\opentest4j-1.3.0.jar",
+                "C:\\Users\\andra\\OneDrive\\Desktop\\MASTER ITU\\SEMESTER 4\\Thesis\\TreeMapBenchmarking\\.bloop\\TreeMapComp\\build\\classes",
+                "C:\\Users\\andra\\OneDrive\\Desktop\\MASTER ITU\\SEMESTER 4\\Thesis\\TreeMapBenchmarking\\src\\main\\resources",
+                "C:\\Users\\andra\\OneDrive\\Desktop\\MASTER ITU\\SEMESTER 4\\Thesis\\TreeMapBenchmarking\\.bloop\\TreeMapComp-test\\build\\classes",
+                "C:\\Users\\andra\\OneDrive\\Desktop\\MASTER ITU\\SEMESTER 4\\Thesis\\TreeMapBenchmarking\\src\\test\\resources"
+            ]
+        },
+        "resolution": {
+            "modules": [
+                {
+                    "organization": "org.junit.jupiter",
+                    "name": "junit-jupiter-api",
+                    "version": "5.10.0",
+                    "artifacts": [
+                        {
+                            "name": "junit-jupiter-api",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\org.junit.jupiter\\junit-jupiter-api\\5.10.0\\551bc33910fee1c601da155a77f67f70f66f6a27\\junit-jupiter-api-5.10.0-sources.jar"
+                        },
+                        {
+                            "name": "junit-jupiter-api",
+                            "path": "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\org.junit.jupiter\\junit-jupiter-api\\5.10.0\\2fe4ba3d31d5067878e468c96aa039005a9134d3\\junit-jupiter-api-5.10.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "edu.stanford.ppl",
+                    "name": "snaptree",
+                    "version": "0.1",
+                    "artifacts": [
+                        {
+                            "name": "snaptree",
+                            "path": "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\edu.stanford.ppl\\snaptree\\0.1\\88caaa75fba09a4944f696c398c09da956f7c2c2\\snaptree-0.1.jar"
+                        },
+                        {
+                            "name": "snaptree",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\edu.stanford.ppl\\snaptree\\0.1\\cae88b8d130b38632b7de620976c5efb84ec5bdb\\snaptree-0.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "net.sf.jopt-simple",
+                    "name": "jopt-simple",
+                    "version": "5.0.4",
+                    "artifacts": [
+                        {
+                            "name": "jopt-simple",
+                            "path": "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\net.sf.jopt-simple\\jopt-simple\\5.0.4\\4fdac2fbe92dfad86aa6e9301736f6b4342a3f5c\\jopt-simple-5.0.4.jar"
+                        },
+                        {
+                            "name": "jopt-simple",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\net.sf.jopt-simple\\jopt-simple\\5.0.4\\950831646d014c9162999019a3cb17d5fc01ac0d\\jopt-simple-5.0.4-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.openjdk.jmh",
+                    "name": "jmh-core",
+                    "version": "1.37",
+                    "artifacts": [
+                        {
+                            "name": "jmh-core",
+                            "path": "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\org.openjdk.jmh\\jmh-core\\1.37\\896f27e49105b35ea1964319c83d12082e7a79ef\\jmh-core-1.37.jar"
+                        },
+                        {
+                            "name": "jmh-core",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\org.openjdk.jmh\\jmh-core\\1.37\\b9d2a0ec37497caeca27a8498e8c821096b68c45\\jmh-core-1.37-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.commons",
+                    "name": "commons-math3",
+                    "version": "3.2",
+                    "artifacts": [
+                        {
+                            "name": "commons-math3",
+                            "path": "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.commons\\commons-math3\\3.2\\ec2544ab27e110d2d431bdad7d538ed509b21e62\\commons-math3-3.2.jar"
+                        },
+                        {
+                            "name": "commons-math3",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.commons\\commons-math3\\3.2\\cd098e055bf192a60c81d81893893e6e31a6482f\\commons-math3-3.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.junit.platform",
+                    "name": "junit-platform-launcher",
+                    "version": "1.10.0",
+                    "artifacts": [
+                        {
+                            "name": "junit-platform-launcher",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\org.junit.platform\\junit-platform-launcher\\1.10.0\\62c17608a285a6246ed1f6c8112eddd075c0a957\\junit-platform-launcher-1.10.0-sources.jar"
+                        },
+                        {
+                            "name": "junit-platform-launcher",
+                            "path": "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\org.junit.platform\\junit-platform-launcher\\1.10.0\\89a1922534ed102be1fb2a8c0b2c6151297a12bf\\junit-platform-launcher-1.10.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.junit.jupiter",
+                    "name": "junit-jupiter-engine",
+                    "version": "5.10.0",
+                    "artifacts": [
+                        {
+                            "name": "junit-jupiter-engine",
+                            "path": "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\org.junit.jupiter\\junit-jupiter-engine\\5.10.0\\90587932d718fc51a48112d33045a18476c542ad\\junit-jupiter-engine-5.10.0.jar"
+                        },
+                        {
+                            "name": "junit-jupiter-engine",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\org.junit.jupiter\\junit-jupiter-engine\\5.10.0\\4fe7a5334478bc8e93bbcb471e24c0fa13520ea7\\junit-jupiter-engine-5.10.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.openjdk.jmh",
+                    "name": "jmh-generator-reflection",
+                    "version": "1.36",
+                    "artifacts": [
+                        {
+                            "name": "jmh-generator-reflection",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\org.openjdk.jmh\\jmh-generator-reflection\\1.36\\90c987f1a384bfc5a2e628917c6418582921d15d\\jmh-generator-reflection-1.36-sources.jar"
+                        },
+                        {
+                            "name": "jmh-generator-reflection",
+                            "path": "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\org.openjdk.jmh\\jmh-generator-reflection\\1.36\\40c9b3bb0523b58dada012987172452895f2c6cb\\jmh-generator-reflection-1.36.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.junit.jupiter",
+                    "name": "junit-jupiter-params",
+                    "version": "5.10.0",
+                    "artifacts": [
+                        {
+                            "name": "junit-jupiter-params",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\org.junit.jupiter\\junit-jupiter-params\\5.10.0\\6c4fb5ab59bbc63438f3c618d769c4eddd65654\\junit-jupiter-params-5.10.0-sources.jar"
+                        },
+                        {
+                            "name": "junit-jupiter-params",
+                            "path": "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\org.junit.jupiter\\junit-jupiter-params\\5.10.0\\9041c7365495a897a64782ea5a6fdb99dab1814e\\junit-jupiter-params-5.10.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.openjdk.jmh",
+                    "name": "jmh-generator-bytecode",
+                    "version": "1.36",
+                    "artifacts": [
+                        {
+                            "name": "jmh-generator-bytecode",
+                            "path": "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\org.openjdk.jmh\\jmh-generator-bytecode\\1.36\\b8ab8b88a6b48a0cb540ede365fa84876e6608bf\\jmh-generator-bytecode-1.36.jar"
+                        },
+                        {
+                            "name": "jmh-generator-bytecode",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\org.openjdk.jmh\\jmh-generator-bytecode\\1.36\\45552bf693589a2863ba14d99bb5a6111bf8b22\\jmh-generator-bytecode-1.36-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.commons",
+                    "name": "commons-math3",
+                    "version": "3.6.1",
+                    "artifacts": [
+                        {
+                            "name": "commons-math3",
+                            "path": "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.commons\\commons-math3\\3.6.1\\e4ba98f1d4b3c80ec46392f25e094a6a2e58fcbf\\commons-math3-3.6.1.jar"
+                        },
+                        {
+                            "name": "commons-math3",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.commons\\commons-math3\\3.6.1\\8fab23986ea8886af34818daf32a718e81dc98ba\\commons-math3-3.6.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.junit.platform",
+                    "name": "junit-platform-commons",
+                    "version": "1.10.0",
+                    "artifacts": [
+                        {
+                            "name": "junit-platform-commons",
+                            "path": "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\org.junit.platform\\junit-platform-commons\\1.10.0\\d533ff2c286eaf963566f92baf5f8a06628d2609\\junit-platform-commons-1.10.0.jar"
+                        },
+                        {
+                            "name": "junit-platform-commons",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\org.junit.platform\\junit-platform-commons\\1.10.0\\74f2f9694d30effa2caff679b9f02ba832cbd1ac\\junit-platform-commons-1.10.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.openjdk.jmh",
+                    "name": "jmh-generator-annprocess",
+                    "version": "1.37",
+                    "artifacts": [
+                        {
+                            "name": "jmh-generator-annprocess",
+                            "path": "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\org.openjdk.jmh\\jmh-generator-annprocess\\1.37\\da93888682df163144edf9b13d2b78e54166063a\\jmh-generator-annprocess-1.37.jar"
+                        },
+                        {
+                            "name": "jmh-generator-annprocess",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\org.openjdk.jmh\\jmh-generator-annprocess\\1.37\\fba3e9b555f48ad2af00812fdb83b0ffd92ea4a\\jmh-generator-annprocess-1.37-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.openjdk.jmh",
+                    "name": "jmh-generator-asm",
+                    "version": "1.36",
+                    "artifacts": [
+                        {
+                            "name": "jmh-generator-asm",
+                            "path": "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\org.openjdk.jmh\\jmh-generator-asm\\1.36\\ea8dba84346f9ecd34fc85f83fc1a14f7475348e\\jmh-generator-asm-1.36.jar"
+                        },
+                        {
+                            "name": "jmh-generator-asm",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\org.openjdk.jmh\\jmh-generator-asm\\1.36\\aa7a4969b80fa4ff20fea198998c335f54054b2b\\jmh-generator-asm-1.36-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.ow2.asm",
+                    "name": "asm",
+                    "version": "9.0",
+                    "artifacts": [
+                        {
+                            "name": "asm",
+                            "path": "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\org.ow2.asm\\asm\\9.0\\af582ff60bc567c42d931500c3fdc20e0141ddf9\\asm-9.0.jar"
+                        },
+                        {
+                            "name": "asm",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\org.ow2.asm\\asm\\9.0\\4ebd60354f49eaac2afe314ae2c7f21191807473\\asm-9.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.opentest4j",
+                    "name": "opentest4j",
+                    "version": "1.3.0",
+                    "artifacts": [
+                        {
+                            "name": "opentest4j",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\org.opentest4j\\opentest4j\\1.3.0\\afb8ff23cffb021c56f333953aebfe6e8818568e\\opentest4j-1.3.0-sources.jar"
+                        },
+                        {
+                            "name": "opentest4j",
+                            "path": "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\org.opentest4j\\opentest4j\\1.3.0\\152ea56b3a72f655d4fd677fc0ef2596c3dd5e6e\\opentest4j-1.3.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apiguardian",
+                    "name": "apiguardian-api",
+                    "version": "1.1.2",
+                    "artifacts": [
+                        {
+                            "name": "apiguardian-api",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\org.apiguardian\\apiguardian-api\\1.1.2\\e0787a997746ac32639e0bf3cb27af8dce8a3428\\apiguardian-api-1.1.2-sources.jar"
+                        },
+                        {
+                            "name": "apiguardian-api",
+                            "path": "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\org.apiguardian\\apiguardian-api\\1.1.2\\a231e0d844d2721b0fa1b238006d15c6ded6842a\\apiguardian-api-1.1.2.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.openjdk.jmh",
+                    "name": "jmh-core",
+                    "version": "1.36",
+                    "artifacts": [
+                        {
+                            "name": "jmh-core",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\org.openjdk.jmh\\jmh-core\\1.36\\51e76cfad1b4224856a52f82fe247cc04995e317\\jmh-core-1.36-sources.jar"
+                        },
+                        {
+                            "name": "jmh-core",
+                            "path": "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\org.openjdk.jmh\\jmh-core\\1.36\\5a69117788322630fc5f228bc804771335d41b1b\\jmh-core-1.36.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.junit.platform",
+                    "name": "junit-platform-engine",
+                    "version": "1.10.0",
+                    "artifacts": [
+                        {
+                            "name": "junit-platform-engine",
+                            "path": "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\org.junit.platform\\junit-platform-engine\\1.10.0\\276c4edcf64fabb5a139fa7b4f99330d7a93b804\\junit-platform-engine-1.10.0.jar"
+                        },
+                        {
+                            "name": "junit-platform-engine",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\org.junit.platform\\junit-platform-engine\\1.10.0\\886c197f5fcfe9eaf0d1dde20aa1bd3abd653f44\\junit-platform-engine-1.10.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.junit.jupiter",
+                    "name": "junit-jupiter",
+                    "version": "5.10.0",
+                    "artifacts": [
+                        {
+                            "name": "junit-jupiter",
+                            "path": "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\org.junit.jupiter\\junit-jupiter\\5.10.0\\8fea1d9c58b2156f1b998f2f18da04bc9e087f74\\junit-jupiter-5.10.0.jar"
+                        },
+                        {
+                            "name": "junit-jupiter",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\andra\\.gradle\\caches\\modules-2\\files-2.1\\org.junit.jupiter\\junit-jupiter\\5.10.0\\4e79ee610aff59d79b5f229252ded392b7d48fd1\\junit-jupiter-5.10.0-sources.jar"
+                        }
+                    ]
+                }
+            ]
+        },
+        "tags": [
+            "library"
+        ]
+    }
+}

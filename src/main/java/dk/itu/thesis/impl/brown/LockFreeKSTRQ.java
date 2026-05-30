@@ -657,6 +657,10 @@ public class LockFreeKSTRQ<E extends Comparable<? super E>, V> {
     }
 
     private void help(final Info<E,V> info) {
+        if (info == null || info.getClass() == Clean.class) 
+        {
+            return;
+        }
         if (info.getClass() == IInfo.class)      helpInsert((IInfo<E,V>) info);
         else if (info.getClass() == DInfo.class) helpDelete((DInfo<E,V>) info);
         else if (info.getClass() == Mark.class)  helpMarked(((Mark<E,V>) info).dinfo);

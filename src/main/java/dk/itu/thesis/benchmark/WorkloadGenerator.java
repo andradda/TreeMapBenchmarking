@@ -14,28 +14,33 @@ public class WorkloadGenerator {
     }
 
     public TreeOperation next(RandomGenerator random) {
-        int p = random.nextInt(100);
+    int p = random.nextInt(100);
 
-        int limit = profile.readPercent();
-        if (p < limit) {
-            return TreeOperation.READ;
-        }
+    int limit = profile.readPercent();
+    if (p < limit) {
+        return TreeOperation.READ;
+    }
 
-        limit += profile.insertPercent();
-        if (p < limit) {
-            return TreeOperation.INSERT;
-        }
+    limit += profile.insertPercent();
+    if (p < limit) {
+        return TreeOperation.INSERT;
+    }
 
-        limit += profile.deletePercent();
-        if (p < limit) {
-            return TreeOperation.DELETE;
-        }
+    limit += profile.deletePercent();
+    if (p < limit) {
+        return TreeOperation.DELETE;
+    }
 
-        limit += profile.updatePercent();
-        if (p < limit) {
-            return TreeOperation.UPDATE;
-        }
+    limit += profile.updatePercent();
+    if (p < limit) {
+        return TreeOperation.UPDATE;
+    }
 
+    limit += profile.snapshotPercent();
+    if (p < limit) {
         return TreeOperation.SNAPSHOT;
     }
+
+    return TreeOperation.RANGE_QUERY;
+}
 }

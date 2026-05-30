@@ -11,7 +11,7 @@ import java.util.random.RandomGenerator;
 @State(Scope.Benchmark)
 public class BenchmarkState {
 
-    @Param({"skiplist"})
+    @Param({"snaptree"})
     public String treeType;
 
     @Param({"readHeavy"})
@@ -35,6 +35,9 @@ public class BenchmarkState {
 
     @Param({"80"})
     public int hotspotProbabilityPercent;
+
+    @Param({"1000"})
+    public int rangeSize;
 
     public ConcurrentTree<Integer, Integer, ?> tree;
     public WorkloadGenerator workloadGenerator;
@@ -61,12 +64,16 @@ public class BenchmarkState {
     }
 
     private WorkloadProfile resolveWorkload(String workloadName) {
-        return switch (workloadName.toLowerCase()) {
-            case "balanced" -> WorkloadProfile.balanced();
-            case "snapshotheavy" -> WorkloadProfile.snapshotHeavy();
-            case "readheavy" -> WorkloadProfile.readHeavy();
-            case "writeheavy" -> WorkloadProfile.writeHeavy();
-            default -> throw new IllegalArgumentException("Unknown workload: " + workloadName);
-        };
-    }
+    return switch (workloadName.toLowerCase()) {
+        case "readonly" -> WorkloadProfile.readOnly();
+        case "balanced" -> WorkloadProfile.balanced();
+        case "snapshotheavy" -> WorkloadProfile.snapshotHeavy();
+        case "rangequerylight" -> WorkloadProfile.rangeQueryLight();
+        case "snapshotandrange" -> WorkloadProfile.snapshotAndRange();
+        case "readheavy" -> WorkloadProfile.readHeavy();
+        case "writeheavy" -> WorkloadProfile.writeHeavy();
+        case "snapshotstress" -> WorkloadProfile.snapshotStress();
+        default -> throw new IllegalArgumentException("Unknown workload: " + workloadName);
+    };
+}
 }

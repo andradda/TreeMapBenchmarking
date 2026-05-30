@@ -1,10 +1,12 @@
 package dk.itu.thesis.impl;
 
 import dk.itu.thesis.api.ConcurrentTree;
+import dk.itu.thesis.api.RangeQueryableTree;
 import dk.itu.thesis.impl.vcas.VcasBatchChromaticMapGC;
 
 public class VcasBatchChromaticAdapter<K extends Comparable<? super K>, V>
-        implements ConcurrentTree<K, V, Object[]> {
+        implements ConcurrentTree<K, V, Object[]>,
+        RangeQueryableTree<K, V, Object[]> {
 
     private final VcasBatchChromaticMapGC<K, V> map;
 
@@ -50,7 +52,7 @@ public class VcasBatchChromaticAdapter<K extends Comparable<? super K>, V>
         return map.rangeScan(min, max);
     }
 
-    public Object[] rangeScan(K lo, K hi) {
+    public Object[] rangeQuery(K lo, K hi) {
         return map.rangeScan(lo, hi);
     }
 

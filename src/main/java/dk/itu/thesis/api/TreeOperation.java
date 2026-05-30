@@ -5,5 +5,6 @@ public enum TreeOperation {
     INSERT,
     DELETE,
     UPDATE,
-    SNAPSHOT // Create and return a consistent read-only view of the tree at that moment
+    SNAPSHOT, // Create and return a consistent read-only view of the tree at that moment
+    RANGE_QUERY // Return all key-value pairs in the specified key range
 }
