@@ -6,6 +6,8 @@
 #SBATCH --nodes=1
 #SBATCH --nodelist=cn15
 #SBATCH --cpus-per-task=40
+#SBATCH --exclusive
+#SBATCH --time=08:00:00
 
 export TMPDIR=$HOME/tmp
 source "$HOME/.sdkman/bin/sdkman-init.sh"
@@ -24,4 +26,4 @@ file "$(which java)"
 which java
 java -version
 
-./run-benchmarks.sh
+RESULT_TAG=X86 ./run-benchmarks.sh

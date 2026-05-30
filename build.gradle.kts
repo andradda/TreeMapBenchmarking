@@ -68,11 +68,11 @@ jmh {
     )
 
     warmupIterations.set(
-        (findProperty("jmhWarmupIterations") as String?)?.toInt() ?: 5
+        (findProperty("jmhWarmupIterations") as String?)?.toInt() ?: 3
     )
 
     iterations.set(
-        (findProperty("jmhIterations") as String?)?.toInt() ?: 7
+        (findProperty("jmhIterations") as String?)?.toInt() ?: 5
     )
 
     warmup.set(
@@ -80,11 +80,11 @@ jmh {
     )
 
     timeOnIteration.set(
-        (findProperty("jmhIterationTime") as String?) ?: "20s"
+        (findProperty("jmhIterationTime") as String?) ?: "10s"
     )
 
     fork.set(
-        (findProperty("jmhForks") as String?)?.toInt() ?: 2
+        (findProperty("jmhForks") as String?)?.toInt() ?: 1
     )
 
     failOnError.set(true)

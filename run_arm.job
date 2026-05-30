@@ -5,7 +5,9 @@
 #SBATCH --partition=dgx1
 #SBATCH --nodes=1
 #SBATCH --nodelist=dgx1
-#SBATCH --cpus-per-task=20
+#SBATCH --cpus-per-task=19
+#SBATCH --time=08:00:00
+#SBATCH --mem=16G
 
 export TMPDIR=$HOME/tmp
 
@@ -21,4 +23,4 @@ pwd # show current directory
 uname -m # show architecture
 which java # show which java is being used
 
-./run-benchmarks.sh
+RESULT_TAG=ARM ./run-benchmarks.sh
